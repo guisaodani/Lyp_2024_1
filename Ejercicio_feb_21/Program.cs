@@ -36,7 +36,7 @@ namespace MiprimerAlgoritmo
 
             exp1 = Math.Pow(num1, 2);
             squr2 = Math.Pow(num2,.5);
-            squr3 = Math.Round(Math.Pow(num3, .3));
+            squr3 = Math.Pow(num3, .3);
 
            
 
