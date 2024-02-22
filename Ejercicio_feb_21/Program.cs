@@ -36,7 +36,7 @@ namespace MiprimerAlgoritmo
 
             exp1 = Math.Pow(num1, 2);
             squr2 = Math.Pow(num2,.5);
-            squr3 = Math.Pow(num3, .3);
+            squr3 = Math.Pow(num3, .333333);
 
            
 
@@ -44,7 +44,7 @@ namespace MiprimerAlgoritmo
                 
             Console.WriteLine("Exponente= " + num1 + " ^2 " + " = " + exp1);
             Console.WriteLine("Raiz Cuadrada = " + num2 + " ^1/2 " +  " = " + squr2);
-            Console.WriteLine("Raiz Cubica = " + num3 + " ^1/3 "+ " = " + Math.Round(squr3));
+            Console.WriteLine("Raiz Cubica = " + num3 + " ^1/3 "+ " = " + squr3);
 
            
 
