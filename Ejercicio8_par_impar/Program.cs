@@ -14,7 +14,7 @@
         Console.WriteLine("\nIngrese un numero: ");
         num = Convert.ToInt32(Console.ReadLine());
         operacion = num % 2;
-
+        
 
 
         if (operacion == 0)
