@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.ComponentModel.Design;
+using System.Diagnostics.CodeAnalysis;
 
 internal class Program
 {
@@ -10,16 +11,16 @@ internal class Program
 
 
         int[] cantidadnumeros = new int[5];
-        int numpositivo=0; 
-         int numnegativo=0;
+        int numpositivo = 0;
+        int numnegativo = 0;
 
-        for (int i = 0; i < cantidadnumeros.Length; i++) 
+        for (int i = 0; i < cantidadnumeros.Length; i++)
         {
             Console.WriteLine("ingresa el numero " + (i + 1));
-            cantidadnumeros[i]= Convert.ToInt32(Console.ReadLine());
+            cantidadnumeros[i] = Convert.ToInt32(Console.ReadLine());
 
         }
-        for (int i = 0;i < cantidadnumeros.Length; i++) 
+        for (int i = 0; i < cantidadnumeros.Length; i++)
         {
             if (cantidadnumeros[i] < 0)
             {
@@ -29,17 +30,51 @@ internal class Program
             {
 
             }
-            
-                
-            
 
-            
+
+
+
+
         }
-        
+
         Console.WriteLine($"cantidad de negativos {numnegativo}");
 
+        //
+
+
+
+        {
+            int cantidadNumerosPositivos = 0;
+
+            while (true)
+            {
+                Console.Write("Ingrese un número (para terminar ingrese un negativo): ");
+                double numero = double.Parse(Console.ReadLine());
+
+                if (numero < 0)
+                {
+                    break;
+                }
+
+                if (numero > 0)
+                {
+                    cantidadNumerosPositivos++;
+                }
+            }
+
+            Console.WriteLine("La cantidad total de números positivos ingresados es: " + cantidadNumerosPositivos);
+        }
     }
+
 }
+
+
+}
+
+      
+
+
+
 
         
 
