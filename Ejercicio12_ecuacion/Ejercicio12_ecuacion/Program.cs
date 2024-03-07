@@ -31,7 +31,7 @@ internal class Program
 
         if (raiz < 0)
         {
-            Console.WriteLine("El sistema no tiene solucion, no puede haber raices negativas");
+            Console.WriteLine("El sistema no tiene solucion, no puede existir raices negativas para este proceso");
              
         }
 
