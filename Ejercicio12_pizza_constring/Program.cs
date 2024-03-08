@@ -28,7 +28,9 @@ internal class Program
         }
         else if (respuesta1 == "no")
         {
-            Console.WriteLine("INGREDIENTES: ");
+            Console.WriteLine("\nEntonces tienes una opcion no vegetariana: :D");
+            Console.WriteLine(" ");
+            Console.WriteLine("\nINGREDIENTES: ");
             Console.WriteLine("1. peperoni: ");
             Console.WriteLine("2. jamon: ");
             Console.WriteLine("3. salmon: ");
@@ -42,7 +44,7 @@ internal class Program
         {
             int ingrediente1;
 
-        
+
             ingrediente1 = int.Parse(Console.ReadLine());
 
             if (ingrediente1 == 1)
@@ -56,18 +58,32 @@ internal class Program
                 Console.WriteLine("tofu");
                 Console.WriteLine("USTED ELEGIO PIZZA VEGETARIANA");
 
-                
+
+
             }
 
+            else if (respuesta1 == "no")
+        {
+
+                Console.WriteLine("¿Escoga un ingrediente?: ");
+                int ingrediente2 = int.Parse(Console.ReadLine());
             
-            
+            if (ingrediente2 == 1)
+            {
+                Console.WriteLine("peperoni");
+            }
+            if (ingrediente2 == 2)
+            {
+                Console.WriteLine("jamon");
+            }
+             if (ingrediente2 == 3)
+            {
+                Console.WriteLine("salmon");
 
-
-
-
-
-
+            }
+        }
 
         }
+        Console.WriteLine("GRACIAS");
     }
 }
