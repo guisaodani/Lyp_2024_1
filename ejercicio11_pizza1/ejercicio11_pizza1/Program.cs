@@ -26,7 +26,7 @@
         else { Console.WriteLine("Vuelva a ingresar al menu");return; }
 
         
-        {
+        
             //solicitar los ingredientes
             Console.WriteLine("Escriba o ingrese su ingrediente: ");
             string ingrediente1 = Console.ReadLine();
@@ -39,7 +39,7 @@
             
 
             
-        }
+        
 
        
         
