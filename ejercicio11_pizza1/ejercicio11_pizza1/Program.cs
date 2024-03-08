@@ -23,7 +23,7 @@
             Console.WriteLine("2. Jamón");
             Console.WriteLine("3. Salmón");
         }
-        else { Console.WriteLine("Vuelva a ingresar al menu"); }
+        else { Console.WriteLine("Vuelva a ingresar al menu");return; }
 
         
         {
