@@ -13,16 +13,25 @@
         //tren 1 ya recorrió una hora
 
 
-        double tiempotren1 = 60;
+        double tiempotren1 = 1;//1hora 0 60min
         double velocidadtren1 = 80;
         
 
         double distanciatren1 = (velocidadtren1 * (tiempotren1));
-        Console.WriteLine($"distacia tren 1: {distanciatren1} metros ");
+        
 
 
         double tiempotren2;
-        double velocidadtren2;
+        double velocidadtren2 = 100;//km/h
+
+        double distanciatren2 = (velocidadtren2*600);
+        //la formula para determinar el tiempo que tarde el tren2 en alcanzar al 1 esta dada por donde t=tiempo
+        // 80t+60=110t
+        //luego despejando t
+
+        double tiempo = (distanciatren1+distanciatren2)/110;
+        Console.WriteLine($"El tiempo es: {tiempo/60} horas");
+
 
 
 
