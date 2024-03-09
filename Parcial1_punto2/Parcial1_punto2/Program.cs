@@ -24,7 +24,7 @@
         double tiempotren2;
         double velocidadtren2 = 100;//km/h
 
-        double distanciatren2 = (velocidadtren2*600);
+        double distanciatren2 = (velocidadtren2*1);
         //la formula para determinar el tiempo que tarde el tren2 en alcanzar al 1 esta dada por donde t=tiempo
         // 80t+60=110t
         //luego despejando t
