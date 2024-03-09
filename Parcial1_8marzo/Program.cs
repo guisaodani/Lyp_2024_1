@@ -41,10 +41,14 @@
         double comision2 = venta2*comision;
         double comision3 = venta3*comision;
 
-        if ((comision1 > comision2) && (comision1 > comision3)) { Console.WriteLine($"Mayor comisio por valor de :{venta1}"); }
-        if ((comision2 > comision3) && (comision2 > comision1)) { Console.WriteLine($"Mayor comisio por valor de: {venta2}"); }
-        if ((comision3 > comision2) && (comision3 > comision1)) { Console.WriteLine($"Mayor comisio por valor de: {venta3}"); }
-        
+        if ((comision1 > comision2) && (comision1 > comision3)) { Console.WriteLine($"Mayor comision es de la venta :{venta1}"); }
+        if ((comision2 > comision3) && (comision2 > comision1)) { Console.WriteLine($"Mayor comision es de la venta: {venta2}"); }
+        if ((comision3 > comision2) && (comision3 > comision1)) { Console.WriteLine($"Mayor comision es de la venta: {venta3}"); }
+
+        Console.WriteLine(" ¿Cuál fue el promedio de las comisiones que recibió por cada venta?");
+
+       
+            Console.WriteLine($"Promedio de las comisiones es: {(comision1+comision2+comision3)/3}");
 
         
 
