@@ -30,7 +30,7 @@
         //luego despejando t
 
         double tiempo = (distanciatren1+distanciatren2)/110;
-        Console.WriteLine($"El tiempo es: {tiempo/60} horas");
+        Console.WriteLine($"El tiempo es: {tiempo} horas");
 
 
 
