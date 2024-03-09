@@ -50,6 +50,20 @@
        
             Console.WriteLine($"Promedio de las comisiones es: {(comision1+comision2+comision3)/3}");
 
+        //Además, la empresa da un beneficio extra de $100.000 si el vendedor supera el objetivo del mes. El
+        //objetivo es sumar en las 3 ventas como mínimo $1.000.000 en ventas. Mostrar un mensaje donde
+        //indique si ganó o no el beneficio.
+
+        double extra = 100000;
+        double meta = 1000000;
+        double totalventas = venta1 + venta2 + venta3;
+        if (totalventas >= meta)
+        {
+            Console.WriteLine($"La persona ganó el beneficio de: {extra}");
+        }
+
+        
+
         
 
 
