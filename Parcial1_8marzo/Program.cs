@@ -34,6 +34,24 @@
 
         // ¿Cuál fue la venta que le generó la mayor comisión?
 
+        Console.WriteLine("¿Cuál fue la venta que le generó la mayor comisión?");
+
+
+        double comision1 = venta1*comision;
+        double comision2 = venta2*comision;
+        double comision3 = venta3*comision;
+
+        if ((comision1 > comision2) && (comision1 > comision3)) { Console.WriteLine($"Mayor comisio por valor de :{venta1}"); }
+        if ((comision2 > comision3) && (comision2 > comision1)) { Console.WriteLine($"Mayor comisio por valor de: {venta2}"); }
+        if ((comision3 > comision2) && (comision3 > comision1)) { Console.WriteLine($"Mayor comisio por valor de: {venta3}"); }
+        
+
+        
+
+
+       
+       
+
 
 
 
