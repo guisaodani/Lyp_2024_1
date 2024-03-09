@@ -27,10 +27,18 @@
         double comisionporventa = ((venta1*comision)+(venta2*comision)+(venta3*comision));
         Console.WriteLine($" La comision del mes por las tres ventas es: {comisionporventa}");
 
-       
+        // ¿Cuál es el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones?
+
+        double sueldomascomision = (salario + comisionporventa);
+        Console.WriteLine($"El total que recibirá mas la comision es de: {sueldomascomision}");
+
+        // ¿Cuál fue la venta que le generó la mayor comisión?
 
 
-        
+
+
+
+
 
 
 
