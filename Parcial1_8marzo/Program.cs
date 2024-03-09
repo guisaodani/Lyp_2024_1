@@ -22,7 +22,11 @@
         Console.WriteLine("Ingrese el valor de la venta 3:");
         double venta3 = double.Parse(Console.ReadLine());
 
-        //¿Cuánto dinero obtendrá por concepto de comisiones por las tres ventas que realiza en el    mes ? 
+        //¿Cuánto dinero obtendrá por concepto de comisiones por las tres ventas que realiza en el  mes ? 
+
+        double comisionporventa = ((venta1*comision)+(venta2*comision)+(venta3*comision));
+        Console.WriteLine($" La comision del mes por las tres ventas es: {comisionporventa}");
+
        
 
 
