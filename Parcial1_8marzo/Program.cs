@@ -22,18 +22,23 @@
         Console.WriteLine("Ingrese el valor de la venta 3:");
         double venta3 = double.Parse(Console.ReadLine());
 
-        //¿Cuánto dinero obtendrá por concepto de comisiones por las tres ventas que realiza en el  mes ? 
+        //"¿Cuánto dinero obtendrá por concepto de comisiones por las tres ventas que realiza en el  mes ? ""
+        Console.WriteLine("\"¿Cuánto dinero obtendrá por concepto de comisiones por las tres ventas que realiza en el  mes ?");
+        Console.WriteLine(" ");
 
         double comisionporventa = ((venta1*comision)+(venta2*comision)+(venta3*comision));
         Console.WriteLine($" La comision del mes por las tres ventas es: {comisionporventa}");
 
         // ¿Cuál es el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones?
+        Console.WriteLine("¿Cuál es el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones?");
+        Console.WriteLine(" ");
 
         double sueldomascomision = (salario + comisionporventa);
         Console.WriteLine($"El total que recibirá mas la comision es de: {sueldomascomision}");
 
         // ¿Cuál fue la venta que le generó la mayor comisión?
 
+        Console.WriteLine("");
         Console.WriteLine("¿Cuál fue la venta que le generó la mayor comisión?");
 
 
@@ -54,6 +59,9 @@
         //objetivo es sumar en las 3 ventas como mínimo $1.000.000 en ventas. Mostrar un mensaje donde
         //indique si ganó o no el beneficio.
 
+        Console.WriteLine("¿La persona ganó el beneficio extra?");
+        Console.WriteLine(" ");
+
         double extra = 100000;
         double meta = 1000000;
         double totalventas = venta1 + venta2 + venta3;
@@ -61,6 +69,7 @@
         {
             Console.WriteLine($"La persona ganó el beneficio de: {extra}");
         }
+        else { Console.WriteLine($"La persona no ganó el benefecio extra de {extra}"); }
 
         
 
