@@ -18,21 +18,27 @@ internal class Program
 
         Double estatura, imc,peso, Npacientes;
         while (true)
+
        
 
         do
-        {
+        {   
+            Console.Clear();
             Console.WriteLine("*****************INDICE DE MASA CORPORAL***********************");
-            Console.WriteLine("Datos de las personas: ");
+            Console.WriteLine("|                 Datos de las personas                         |");
 
 
             
             Console.WriteLine(" ");
             Console.WriteLine("Ingrese los siguientes datos");
             Console.WriteLine("Ingrese el peso: ");
-            peso = Double.Parse(Console.ReadLine());
+            peso = Double.Parse(Console.ReadLine()); 
+            Console.ReadKey(); //para sostener el programa
+
             Console.WriteLine("Ingrese la estartura en CM: ");
             estatura = Double.Parse(Console.ReadLine());
+
+            Console.ReadKey(); //para sostener el programa
             Console.WriteLine("...");
 
             imc = (peso / (Math.Pow(estatura, 2)));
@@ -44,25 +50,27 @@ internal class Program
 
             {
                 Console.WriteLine("La persona se encuentra en: Peso Insuficiente");
+                    Console.ReadKey(); //para sostener el programa
 
+                }
+              else if (imc >= 18.5 && imc <= 24.9)
+              {
+                Console.WriteLine("La persona se encuentra en: Peso Saludable");
+                    Console.ReadKey(); //para sostener el programa
+                }
 
-            }
-            else if (imc >= 18.5 && imc <= 24.9)
-            {
-                Console.WriteLine("La persona se encuentra en: Peso saludable");
-            }
-
-            else if (imc >= 25.0 && imc <= 29.9)
-            {
+              else if (imc >= 25.0 && imc <= 29.9)
+               {
                 Console.WriteLine("La persona se encuentra en: Sobrepeso");
-            }
+                    Console.ReadKey(); //para sostener el programa
+                }
 
-
-            else
+              else
                 Console.WriteLine("La persona se encuentra en: Obesidad");
+                Console.ReadKey(); //para sostener el programa
 
-        }
-        while(true);
+            }
+        while(true);//mientras la operacion se realice el volver a pedir los datos
 
 
 
