@@ -16,41 +16,53 @@ internal class Program
 
         //IMC=peso/estaturá al cuadrado
 
-        Double estatura, imc,peso;
+        Double estatura, imc,peso, Npacientes;
+        while (true)
        
-        
 
+        do
+        {
             Console.WriteLine("*****************INDICE DE MASA CORPORAL***********************");
+            Console.WriteLine("Datos de las personas: ");
+
+
+            
             Console.WriteLine(" ");
             Console.WriteLine("Ingrese los siguientes datos");
             Console.WriteLine("Ingrese el peso: ");
-            estatura = Double.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese la estartura en CM: ");
             peso = Double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese la estartura en CM: ");
+            estatura = Double.Parse(Console.ReadLine());
             Console.WriteLine("...");
 
-            imc = (peso/Math.Pow(estatura,2));
+            imc = (peso / (Math.Pow(estatura, 2)));
             Console.WriteLine($"La persona tiene un IMC de: {imc}");
 
-        if (imc < 18.5)
 
-        {
-            Console.WriteLine("La persona se encuentra en: Peso insuficiente");
+
+            if (imc < 18.5)
+
+            {
+                Console.WriteLine("La persona se encuentra en: Peso Insuficiente");
+
+
+            }
+            else if (imc >= 18.5 && imc <= 24.9)
+            {
+                Console.WriteLine("La persona se encuentra en: Peso saludable");
+            }
+
+            else if (imc >= 25.0 && imc <= 29.9)
+            {
+                Console.WriteLine("La persona se encuentra en: Sobrepeso");
+            }
+
+
+            else
+                Console.WriteLine("La persona se encuentra en: Obesidad");
 
         }
-        else if (imc >= 18.5 && imc <= 24.9)
-        {
-            Console.WriteLine("La persona se encuentra en: Peso saludable");
-        }
-
-        else if (imc >= 25.0 && imc <= 29.9)
-        {
-            Console.WriteLine("La persona se encuentra en: Sobrepeso");
-        }
-
-
-        else
-            Console.WriteLine("La persona se encuentra en: Obesidad");
+        while(true);
 
 
 
