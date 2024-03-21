@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.Design;
+using System.Runtime.ExceptionServices;
 
 internal class Program
 {
@@ -16,17 +17,37 @@ internal class Program
         //IMC=peso/estaturá al cuadrado
 
         Double estatura, peso, imc;
+        bool salir=false;
+        do
+        {
 
-        Console.WriteLine("*****************INDICE DE MASA CORPORAL***********************");
-        Console.WriteLine(" ");
-        Console.WriteLine("Ingrese los siguientes datos");
-        estatura = Convert.ToInt32(Console.ReadLine());
-        peso = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("...");
-        imc = peso / Math.Pow(estatura, 2);
+            Console.WriteLine("*****************INDICE DE MASA CORPORAL***********************");
+            Console.WriteLine(" ");
+            Console.WriteLine("Ingrese los siguientes datos");
+            Console.WriteLine("Ingrese el peso: ");
+            estatura = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ingrese la estartura: ");
+            peso = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("...");
 
+            imc = peso / Math.Pow(estatura, 2);
+            Console.WriteLine($"La persona tiene un IMC de: {imc}");
 
+            switch (imc)
+            {
+                case 1:
+                    if (imc >= 18.5 && imc < 24.9) 
 
+                    {
+                        Console.WriteLine("La persona se encuentra en: Peso incuficiente");
+                    }
+                    break;
+
+            }
+            
+
+        }
+        while (false);
 
     }
 }
