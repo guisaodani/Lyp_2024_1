@@ -16,38 +16,43 @@ internal class Program
 
         //IMC=peso/estaturá al cuadrado
 
-        Double estatura, peso, imc;
-        bool salir=false;
-        do
-        {
+        Double estatura, imc,peso;
+       
+        
 
             Console.WriteLine("*****************INDICE DE MASA CORPORAL***********************");
             Console.WriteLine(" ");
             Console.WriteLine("Ingrese los siguientes datos");
             Console.WriteLine("Ingrese el peso: ");
-            estatura = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Ingrese la estartura: ");
-            peso = Convert.ToInt32(Console.ReadLine());
+            estatura = Double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese la estartura en CM: ");
+            peso = Double.Parse(Console.ReadLine());
             Console.WriteLine("...");
 
-            imc = peso / Math.Pow(estatura, 2);
+            imc = (peso/Math.Pow(estatura,2));
             Console.WriteLine($"La persona tiene un IMC de: {imc}");
 
-            switch (imc)
-            {
-                case 1:
-                    if (imc >= 18.5 && imc < 24.9) 
+        if (imc < 18.5)
 
-                    {
-                        Console.WriteLine("La persona se encuentra en: Peso incuficiente");
-                    }
-                    break;
-
-            }
-            
+        {
+            Console.WriteLine("La persona se encuentra en: Peso insuficiente");
 
         }
-        while (false);
+        else if (imc >= 18.5 && imc <= 24.9)
+        {
+            Console.WriteLine("La persona se encuentra en: Peso saludable");
+        }
+
+        else if (imc >= 25.0 && imc <= 29.9)
+        {
+            Console.WriteLine("La persona se encuentra en: Sobrepeso");
+        }
+
+
+        else
+            Console.WriteLine("La persona se encuentra en: Obesidad");
+
+
 
     }
 }
